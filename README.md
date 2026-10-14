@@ -8,10 +8,10 @@ Aplicación web interactiva de lista de tareas ("Todo List") desarrollada con **
 
 ### a) ¿Qué diferencia hay entre props y state en React?
 Las **props** (propiedades) son datos que se envían desde un componente padre hacia un componente hijo. Son estrictamente de **solo lectura** (*read-only*) para el componente receptor y sirven para configurar o personalizar su comportamiento desde el exterior de manera estática o externa. 
-En contraste, el **state** (estado) es un dato interno, privado y administrado directamente por el propio componente. Puede cambiar a lo largo del tiempo debido a las acciones o interacciones del usuario, y cada vez que se actualiza mediante su función modificadora, provoca que React vuelva a renderizar automáticamente el componente para reflejar los cambios en la interfaz de usuario.
+En cambio, el **state** (estado) es un dato interno, privado y administrado directamente por el propio componente. Puede cambiar a lo largo del tiempo debido a las acciones o interacciones del usuario, y cada vez que se actualiza mediante su función modificadora, provoca que React vuelva a renderizar automáticamente el componente para reflejar los cambios en la interfaz de usuario.
 
 ### b) ¿Por qué es importante usar una key al renderizar una lista de elementos?
-Es fundamental porque le permite a React identificar de manera única y unívoca cada elemento dentro de un arreglo. Cuando un elemento de la lista es modificado, agregado o eliminado, las `keys` ayudan a que React optimice el proceso de actualización del DOM virtual, sabiendo exactamente qué nodo cambió en lugar de tener que redibujar toda la lista desde cero, lo que previene errores de renderizado y pérdida de estado en los componentes.
+Es fundamental porque le permite a React identificar cada elemento dentro de un arreglo. Cuando un elemento de la lista es modificado, agregado o eliminado, las `keys` ayudan a que React optimice el proceso de actualización del DOM virtual, sabiendo exactamente qué nodo cambió en lugar de tener que redibujar toda la lista desde cero, lo que previene errores de renderizado y pérdida de estado en los componentes.
 
 ### c) Explica con tus propias palabras qué hace la función useState y da un ejemplo de dónde la usaste en tu mini aplicación.
 `useState` es un Hook fundamental de React que permite agregar y recordar un estado reactivo dentro de un componente funcional. Al invocarlo, devuelve un arreglo con dos elementos: la variable que almacena el valor actual y una función específica para actualizar dicho valor.
