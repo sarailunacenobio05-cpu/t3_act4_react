@@ -1,0 +1,89 @@
+.titulo {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffb5a7; 
+}
+
+.containerTodoApp {
+  width: 400px;
+  max-width: 90vw;
+}
+
+.formularioTarea {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formularioTarea input {
+  flex: 1;
+  padding: 10px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #2a2426;
+  color: #fff;
+}
+
+.formularioTarea input::placeholder {
+  color: #99888c;
+}
+
+.formularioTarea button {
+  width: auto;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: #ffb5a7; 
+  color: #2b1d20;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  transition: background 0.2s;
+}
+
+.formularioTarea button:hover {
+  background-color: #fcd5ce; 
+}
+
+.listaTareas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listaTareas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2426; 
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #ffb5a7;
+}
+
+.listaTareas li span {
+  cursor: pointer;
+  flex: 1;
+  word-break: break-word;
+  color: #f8edeb;
+}
+
+.listaTareas li.completada span {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.listaTareas li button {
+  background-color: transparent;
+  color: #f8edeb;
+  width: 30px;
+  margin-right: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.listaTareas li button:hover {
+  color: #ff686b; 
+}
